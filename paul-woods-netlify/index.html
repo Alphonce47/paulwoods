@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore property management, plot purchases, and letting services with Paul Woods Investments. Serving individuals and small businesses across Kenya.">
+  <meta name="keywords" content="plot letting Kenya, property management Nairobi, buy land Kenya, Paul Woods plots, trusted land agents Kenya">
+  <title>Paul Woods Investments | Property Management & Plot Letting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-in-up.visible {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  background: linear-gradient(to bottom, #f9fbfd, #e6eff7);
+}
+    header {
+  background: #c6d7eb;
+  color: #1d2a35;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+    header h1 { font-family: 'Montserrat', sans-serif; font-size: 2rem; }
+    nav {
+  display: flex;
+  justify-content: center;
+  background: #b3cde8;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+    nav a {
+  color: #ffffff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+nav a:hover::after {
+  transform: scaleX(1);
+}
+    section {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+    .hero {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(198, 215, 235, 0.85)),
+              url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  color: #222;
+  text-align: center;
+  padding: 6rem 1rem;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: inset 0 0 60px rgba(255, 255, 255, 0.4);
+}
+    .hero h2 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat';
+  color: #1d2a35;
+  text-shadow: 1px 1px 3px rgba(255,255,255,0.6);
+}
+    .hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #1d2a35;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+}
+    .btn {
+  background: #395886;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #2c446b;
+}
+    .services, .testimonials, .faq, .contact, .listings {
+  background-color: #dce7f3;
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+    .services h3, .testimonials h3, .faq h3, .contact h3 {
+  margin-bottom: 1rem;
+  color: #395886;
+}
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .card {
+  background: #ffffff;
+  padding: 1rem;
+  border-left: 4px solid #395886;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+    footer {
+  background: #f0f4f9;
+  color: #333;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+    form { display: grid; gap: 1rem; }
+    input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #395886;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+    .whatsapp-btn {
+  display: inline-block;
+  background: #395886;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+.whatsapp-btn:hover {
+  background: #2c446b;
+}
+  @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Paul Woods Investments</h1>
+    <p>Building Your Tomorrow, Today</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#listings">Listings</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+  <h2 style="color:#1d2a35; text-shadow: 1px 1px 2px rgba(255,255,255,0.6);">Reliable Property Management<br>Seamless Plot Deals</h2>
+  <p style="font-size: 1.2rem; color:#1d2a35; font-weight: bold; text-shadow: 1px 1px 1px rgba(255,255,255,0.6);">Let Paul Woods Investments guide your next real estate move.</p>
+  <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+  <a href="https://wa.me/254706563167?text=Hi%20Paul%20Woods%20Investments%2C%20I%27m%20interested%20in%20a%20consultation%20regarding%20property%20services." class="btn" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; height: 20px;">
+    Book a Consultation
+  </a>
+  <a href="tel:+254706563167" class="btn" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 16 16">
+      <path d="M3.654 1.328a.678.678 0 0 1 .58-.093c.447.12 1.158.456 2.02 1.319.861.86 1.198 1.57 1.318 2.017a.678.678 0 0 1-.093.58l-.845 1.26a.678.678 0 0 0 .146.878l2.457 2.457a.678.678 0 0 0 .878.146l1.26-.845a.678.678 0 0 1 .58-.093c.447.12 1.158.456 2.02 1.319.861.86 1.198 1.57 1.318 2.017a.678.678 0 0 1-.093.58l-1.013 1.52a1.745 1.745 0 0 1-1.623.773c-1.5-.12-4.63-1.34-7.104-3.813C1.987 8.208.767 5.077.647 3.578a1.745 1.745 0 0 1 .773-1.623l1.52-1.013z"/>
+    </svg>
+    Call Now
+  </a>
+</div>
+  <button class="btn" onclick="document.getElementById('plotModal').style.display='block'">View Available Plots</button>
+<div id="plotModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background-color: rgba(240, 244, 249, 0.95); z-index:1000; justify-content:center; align-items:center;">
+  <div style="position:relative; background:#fff; padding:1rem; border-radius:8px; max-width:90vw; max-height:90vh; overflow-y:auto;">
+    <span onclick="document.getElementById('plotModal').style.display='none'" style="position:absolute; top:10px; right:15px; font-size:1.5rem; cursor:pointer;">&times;</span>
+    <div style="display:grid; gap:1.5rem; text-align:center;">
+      <div>
+        <img src="images/plots/plot1.jpg" alt="Plot 1 - Utange" style="width:100%; max-width:500px; height:auto; border-radius:5px; cursor: pointer;" onclick="window.open(this.src, '_blank')">
+        $1
+        <a href="https://wa.me/254706563167?text=I'm%20interested%20in%20Plot%201%20-%20Utange" class="btn" style="margin-top: 0.5rem;">Reserve Plot</a>
+      </div>
+      <div>
+        <img src="images/plots/plot2.jpg" alt="Plot 2 - Kiembeni" style="width:100%; max-width:500px; height:auto; border-radius:5px; cursor: pointer;" onclick="window.open(this.src, '_blank')">
+        $1
+        <a href="https://wa.me/254706563167?text=I'm%20interested%20in%20Plot%202%20-%20Kiembeni" class="btn" style="margin-top: 0.5rem;">Reserve Plot</a>
+      </div>
+      <div>
+        <img src="images/plots/plot3.jpg" alt="Plot 3 - Kashani" style="width:100%; max-width:500px; height:auto; border-radius:5px; cursor: pointer;" onclick="window.open(this.src, '_blank')">
+        $1
+        <a href="https://wa.me/254706563167?text=I'm%20interested%20in%20Plot%203%20-%20Kashani" class="btn" style="margin-top: 0.5rem;">Reserve Plot</a>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <section id="about" class="fade-in-up">
+    <h3>About Us</h3>
+    <p>Paul Woods Investments specializes in providing tailored real estate solutions. With a strong foundation in property management and plot transactions, we bring clarity and confidence to property ownership and letting.</p>
+  </section>
+
+  <section id="services" class="services fade-in-up">
+    <h3>Our Services</h3>
+    <div class="cards">
+      <div class="card fade-in-up">
+        <h4>Plot Purchasing</h4>
+        <p>Secure, verified, and high-value land acquisition.</p>
+      </div>
+      <div class="card fade-in-up">
+        <h4>Letting</h4>
+        <p>Find reliable tenants fast and manage your rentals with ease.</p>
+      </div>
+      <div class="card fade-in-up">
+        <h4>Property Management</h4>
+        <p>End-to-end management of your residential or commercial assets.</p>
+      </div>
+      <div class="card fade-in-up">
+        <h4>Advisory Services</h4>
+        <p>Honest, transparent, and expert property guidance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="listings" class="fade-in-up listings">
+    <h3>Featured Listings</h3>
+    <div class="cards">
+      <div class="card fade-in-up">
+        <h4>1/4 Acre in Utange</h4>
+        <p>Prime residential plot with title deed – Ksh 1.2M</p>
+      </div>
+      <div class="card fade-in-up">
+        <h4>Office Space – kiembeni</h4>
+        <p>Modern commercial unit, 1200 sq ft – Ksh 85K/month</p>
+      </div>
+      <div class="card fade-in-up">
+        <h4>1/8 Acre – Kashani</h4>
+        <p>Ideal for development, near town – Ksh 650K</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials fade-in-up">
+    <h3>What Our Clients Say</h3>
+    <div class="cards">
+      <div class="card fade-in-up">
+        <p>"I sold my plot in just 3 days. Transparent process and great service!"</p>
+        <strong>- Samuel, Bamburi</strong>
+      </div>
+      <div class="card fade-in-up">
+        <p>"They handled everything about my property with professionalism and honesty."</p>
+        <strong>- Jane, kiembeni</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq fade-in-up">
+    <h3>Frequently Asked Questions</h3>
+    <div>
+      <p><strong>Q:</strong> What documents do I need to buy a plot?</p>
+      <p><strong>A:</strong> A copy of ID, KRA PIN, and proof of payment.</p>
+      <br>
+      <p><strong>Q:</strong> How do I list my property with you?</p>
+      <p><strong>A:</strong> Use the contact form below or WhatsApp us directly.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact fade-in-up">
+    <h3>Contact Us</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button class="btn" type="submit">Send Inquiry</button>
+    </form>
+    <a href="https://wa.me/254706563167?text=Hi%20Paul%20Woods%20Investments%2C%20I%27m%20interested%20in%20a%20consultation%20regarding%20property%20services." class="whatsapp-btn" target="_blank">Chat with us on WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Paul Woods Investments. All Rights Reserved.</p>
+    <p>P.O BOX: 97848-80100 | Office Line: 254727672408 | WhatsApp: 254706563167 | Email: info@paulwoods.co.ke</p>
+  </footer>
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, index * 200); // 200ms delay per section
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.fade-in-up').forEach((el, index) => {
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
